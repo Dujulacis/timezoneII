@@ -1,3 +1,10 @@
-[gd_scene format=3 uid="uid://dup3xgxe75iep"]
+[gd_scene load_steps=2 format=3 uid="uid://dup3xgxe75iep"]
+
+[ext_resource type="Texture2D" uid="uid://byoumwyypjp3d" path="res://Assets/runing sprite copy.png" id="1_lt3lg"]
 
 [node name="MovementTest" type="Node2D"]
+
+[node name="RuningSpriteCopy" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(130, 127)
+texture = ExtResource("1_lt3lg")

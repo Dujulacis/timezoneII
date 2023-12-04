@@ -13,3 +13,9 @@ config_version=5
 config/name="Timezone II"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
+
+[importer_defaults]
+
+texture={
+"process/fix_alpha_border": false
+}
