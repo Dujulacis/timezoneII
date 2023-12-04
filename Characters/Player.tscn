@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://r6ulqrv0lxd8"]
+
+[ext_resource type="Texture2D" uid="uid://byoumwyypjp3d" path="res://Assets/runing sprite copy.png" id="1_ncgf4"]
+[ext_resource type="Script" path="res://Scripts/CharScripts/player.gd" id="1_ohuso"]
+
+[node name="Player" type="Node2D"]
+script = ExtResource("1_ohuso")
+
+[node name="RuningSpriteCopy" type="Sprite2D" parent="."]
+position = Vector2(293, 195)
+texture = ExtResource("1_ncgf4")

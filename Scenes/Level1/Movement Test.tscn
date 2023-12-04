@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dup3xgxe75iep"]
+
+[ext_resource type="Script" path="res://Scenes/Level1/Movement Test.gd" id="1_ir4d3"]
+[ext_resource type="PackedScene" uid="uid://r6ulqrv0lxd8" path="res://Characters/Player.tscn" id="2_kcgky"]
+
+[node name="MovementTest" type="Node2D"]
+script = ExtResource("1_ir4d3")
+
+[node name="Player" parent="." instance=ExtResource("2_kcgky")]
