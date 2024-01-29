@@ -1,11 +1,19 @@
-[gd_scene load_steps=3 format=3 uid="uid://r6ulqrv0lxd8"]
+[gd_scene load_steps=4 format=3 uid="uid://r6ulqrv0lxd8"]
 
 [ext_resource type="Texture2D" uid="uid://byoumwyypjp3d" path="res://Assets/runing sprite copy.png" id="1_ncgf4"]
 [ext_resource type="Script" path="res://Scripts/CharScripts/player.gd" id="1_ohuso"]
 
-[node name="Player" type="Node2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uttai"]
+size = Vector2(20, 57)
+
+[node name="Player" type="CharacterBody2D"]
+motion_mode = 1
+wall_min_slide_angle = 0.383972
 script = ExtResource("1_ohuso")
 
 [node name="RuningSpriteCopy" type="Sprite2D" parent="."]
-position = Vector2(293, 195)
 texture = ExtResource("1_ncgf4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1.5)
+shape = SubResource("RectangleShape2D_uttai")
